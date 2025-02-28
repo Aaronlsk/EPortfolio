@@ -1,21 +1,22 @@
-import Particles from "@tsparticles/react";
-import { useEffect, useMemo, useState } from "react";
-import { loadSlim } from "@tsparticles/slim"; // Import the slim version
+
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { useEffect, useMemo } from "react";
+import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+
+
 
 const ParticlesComponent = (props) => {
-  const [init, setInit] = useState(false);
 
-  useEffect(() => {
-    const initParticles = async () => {
-      const engine = await loadSlim(); // Load the slim version of tsparticles
-      setInit(true);
-    };
-    initParticles();
-  }, []);
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+          await loadSlim(engine);
+        });
+      }, []);
 
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
 
   const options = useMemo(
     () => ({
@@ -87,6 +88,7 @@ const ParticlesComponent = (props) => {
     }),
     []
   );
+
 
   return (
     <Particles
