@@ -1,8 +1,8 @@
 import React from 'react';
 import { ReactTyped } from "react-typed";
-import './Header.css';
+import './Header.css'; // Ensure this is imported
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Particles from './particles';
+import Particles from './particles'; // Ensure this points to your ParticlesComponent
 
 const Header = () => {
     return (

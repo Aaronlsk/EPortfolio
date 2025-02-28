@@ -1,7 +1,17 @@
 import Particles from "@tsparticles/react";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { loadSlim } from "@tsparticles/slim"; // Import the slim version
 
 const ParticlesComponent = (props) => {
+  const [init, setInit] = useState(false);
+
+  useEffect(() => {
+    const initParticles = async () => {
+      const engine = await loadSlim(); // Load the slim version of tsparticles
+      setInit(true);
+    };
+    initParticles();
+  }, []);
 
   const particlesLoaded = (container) => {
     console.log(container);
@@ -11,7 +21,7 @@ const ParticlesComponent = (props) => {
     () => ({
       background: {
         color: {
-          value: "transparent",
+          value: "transparent", // Make sure the background is transparent
         },
       },
       fpsLimit: 120,
@@ -88,8 +98,8 @@ const ParticlesComponent = (props) => {
         top: 0,
         left: 0,
         width: "100%",
-        height: "80vh",
-        zIndex: 1,
+        height: "80vh", // Set the height to 80vh
+        zIndex: 1, // Ensure it is behind the header content
       }}
     />
   );
