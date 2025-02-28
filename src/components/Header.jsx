@@ -1,13 +1,11 @@
 import React from 'react';
 import { ReactTyped } from "react-typed";
-import './Header.css'; // Ensure this is imported
+import './Header.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import Particles from './particles'; // Ensure this points to your ParticlesComponent
 
 const Header = () => {
     return (
         <header>
-            <Particles id="particles" />
             <div className="header-content">
                 <div className="header-left">
                     <div className="profile-img-container">

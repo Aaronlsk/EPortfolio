@@ -1,7 +1,7 @@
 
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo } from "react";
-import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
+import { loadSlim } from "@tsparticles/slim";
 
 
 
@@ -93,8 +93,8 @@ const ParticlesComponent = (props) => {
         top: 0,
         left: 0,
         width: "100%",
-        height: "80vh", // Set the height to 80vh
-        zIndex: 1, // Ensure it is behind the header content
+        height: "100%",
+        zIndex: 1,
       }}
     />
   );
