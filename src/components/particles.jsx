@@ -20,74 +20,67 @@ const ParticlesComponent = (props) => {
 
   const options = useMemo(
     () => ({
-      background: {
-        color: {
-          value: "transparent", // Make sure the background is transparent
-        },
-      },
-      fpsLimit: 120,
-      interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "repulse",
-          },
-          onHover: {
-            enable: true,
-            mode: "grab",
-          },
-        },
-        modes: {
-          push: {
-            distance: 200,
-            duration: 15,
-          },
-          grab: {
-            distance: 150,
-          },
-        },
-      },
       particles: {
-        color: {
-          value: "#FFFFFF",
-        },
-        links: {
-          color: "#FFFFFF",
-          distance: 150,
-          enable: true,
-          opacity: 0.3,
-          width: 1,
-        },
-        move: {
-          direction: "none",
-          enable: true,
-          outModes: {
-            default: "bounce",
-          },
-          random: true,
-          speed: 1,
-          straight: false,
-        },
         number: {
-          density: {
-            enable: true,
-          },
-          value: 150,
+            value: 175,
+            density: {
+                enable: true,
+                value_area: 800
+            }
         },
-        opacity: {
-          value: 1.0,
+        color: {
+          value: "#ffffff",
         },
         shape: {
           type: "circle",
         },
+        opacity: {
+          value: 0.5, // More translucent particles
+          random: false,
+        },
         size: {
-          value: { min: 1, max: 3 },
+          value: 3,
+          random: true,
+        },
+        links: {
+          enable: true,
+          distance: 150, // Closer particles, more links
+          color: "#ffffff",
+          opacity: 0.4, // More translucent lines
+          width: 1, // Keep lines thin for web effect
+        },
+        move: {
+          enable: true,
+          speed: 1, // Slower movement for a floating effect
+          direction: "none",
+          random: false,
+          straight: false,
+          outModes: {
+            default: "out",
+          },
+          bounce: false,
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+          resize: true,
         },
       },
       detectRetina: true,
     }),
     []
   );
+  
+  
 
 
   return (
