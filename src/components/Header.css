@@ -1,0 +1,139 @@
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: linear-gradient(270deg, #2563eb, #4f46e5, #06b6d4);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite; /* Animation for the gradient */
+    color: white;
+    padding: 4rem 2rem;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+
+.header-left {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+.profile-img-container {
+    perspective: 1000px;
+    margin-bottom: 1.5rem;
+}
+
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+    transform: rotateY(10deg) rotateX(5deg);
+}
+
+.typed-text {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    min-height: 2em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.header-intro {
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    max-width: 600px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column; /* Stack the profile image and icons vertically */
+    align-items: center; /* Center the items horizontally */
+    gap: 0.5rem; /* Space between the profile image and icons */
+}
+
+.social-link {
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+}
+
+.header-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button.primary {
+    background: white;
+    color: var(--primary);
+}
+
+.cta-button.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+    margin-top: 0.5rem; /* Space above icons */
+}
+
+.social-icon {
+    color: white; /* White color for icons */
+    font-size: 2rem; /* Increase icon size */
+    transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+
