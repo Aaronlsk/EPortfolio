@@ -3,7 +3,7 @@ import React from 'react';
 const Education = () => {
     return (
         <section id="education">
-            <h2>Education Journey</h2>
+            <h2 className="section-title">Education Journey</h2>
             <div className="timeline">
                 <div className="timeline-item">
                     <div className="timeline-dot"></div>

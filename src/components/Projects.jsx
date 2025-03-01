@@ -1,16 +1,17 @@
 import React from 'react';
+import './Projects.css';
 
 const Projects = () => {
     return (
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 className="section-title">Projects</h2>
             <div className="projects-grid">
                 <div className="project-card">
                     <img src="images/FED_Website_Image.png" alt="E-commerce Platform" className="project-img" />
                     <div className="project-overlay">
                         <div className="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Source Code</a>
                         </div>
                     </div>
                     <div className="project-content">
@@ -28,8 +29,8 @@ const Projects = () => {
                     <img src="images/Willing_Hearts_Website_Image.png" alt="Donation Website" className="project-img" />
                     <div className="project-overlay">
                         <div className="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Source Code</a>
                         </div>
                     </div>
                     <div className="project-content">
@@ -47,8 +48,8 @@ const Projects = () => {
                     <img src="images/FSDP_App_Image.png" alt="DineAd Connect" className="project-img" />
                     <div className="project-overlay">
                         <div className="project-links">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
-                            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">View Live</a>
+                            <a href="https://example.com" target="_blank" rel="noopener noreferrer">Source Code</a>
                         </div>
                     </div>
                     <div className="project-content">

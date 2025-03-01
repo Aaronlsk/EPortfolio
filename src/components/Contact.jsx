@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import confetti from 'canvas-confetti';
+import './Contact.css';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -15,7 +16,7 @@ const Contact = () => {
         e.preventDefault();
         setLoading(true);
 
-        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+        emailjs.send('service_vc3pfof', 'template_4ghtixc', formData, 'SYpPpvMiBB_1FNlMT')
             .then(() => {
                 confetti();
                 alert('Thank you for your message! I will get back to you soon.');
@@ -32,7 +33,7 @@ const Contact = () => {
 
     return (
         <section id="contact">
-            <h2>Get in Touch</h2>
+            <h2 className="section-title">Get in Touch</h2>
             <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
