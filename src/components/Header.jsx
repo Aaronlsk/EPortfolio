@@ -20,10 +20,10 @@ const Header = () => {
                     <div className="quick-links">
                         {/* GitHub and LinkedIn icons below the profile image */}
                         <div className="social-icons">
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://github.com/Aaronlsk" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <i className="fab fa-github"></i>
                             </a>
-                            <a href="https://example.com" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://linkedin.com/in/aaron-lua" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>
