@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './ScrollProgressBar.css'; // Import the CSS for styling
+import './ScrollProgressBar.css'; 
 
 const ScrollProgressBar = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -9,16 +9,13 @@ const ScrollProgressBar = () => {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
 
-    // Calculate the scroll progress as a percentage
     const progress = (scrollY / (documentHeight - windowHeight)) * 100;
     setScrollProgress(progress);
   };
 
   useEffect(() => {
-    // Add scroll event listener to update progress
     window.addEventListener('scroll', updateScrollProgress);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', updateScrollProgress);
     };

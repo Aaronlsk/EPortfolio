@@ -1,0 +1,85 @@
+/* Resume Section */
+.resume-section {
+  padding: 8rem 2rem;
+  max-width: 1200px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+/* Resume Container */
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Zoom Controls */
+.zoom-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.zoom-controls button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.5rem;
+}
+
+.zoom-controls button:hover {
+  background: var(--secondary);
+}
+
+/* Resume Display - Fixed size container */
+.resume-display {
+  width: 100%;
+  max-width: 800px;
+  height: 842px; /* Fixed A4 height */
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* PDF Object */
+.resume-object {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+/* Download Button */
+.download-button {
+  margin-top: 1rem;
+}
+
+.download-link {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.download-link:hover {
+  background: var(--secondary);
+}

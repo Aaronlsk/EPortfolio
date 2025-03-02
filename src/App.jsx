@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ToggleButton from './components/ToggleButton';
 import ScrollProgressBar from './components/ScrollProgressBar';
+import Resume from './components/Resume';
 
 function App() {
     return (
@@ -22,6 +23,7 @@ function App() {
             <Education />
             <Skills />
             <Projects />
+            <Resume />
             <Contact />
             <Footer />
         </div>

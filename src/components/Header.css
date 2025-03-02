@@ -59,16 +59,25 @@ header {
     transform: rotateY(10deg) rotateX(5deg);
 }
 
+.header-right {
+    margin-bottom: 3rem;
+}
+
+.header-right h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
 .typed-text {
     font-size: 1.5rem;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     min-height: 2em;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .header-intro {
     font-size: 1.1rem;
-    margin: 1.5rem 0;
+    margin: 3rem 0;
     max-width: 600px;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
@@ -123,16 +132,16 @@ header {
 
 .social-icons {
     display: flex;
-    gap: 1rem; /* Space between icons */
-    margin-top: 0.5rem; /* Space above icons */
+    gap: 1rem;
+    margin-top: 0.5rem; 
 }
 
 .social-icon {
-    color: white; /* White color for icons */
-    font-size: 2rem; /* Increase icon size */
-    transition: transform 0.3s ease; /* Add transition for hover effect */
+    color: white; 
+    font-size: 2rem; 
+    transition: transform 0.3s ease; 
 }
 
 .social-icon:hover {
-    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    transform: scale(1.1); 
 }
