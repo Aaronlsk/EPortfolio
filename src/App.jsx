@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ToggleButton from './components/ToggleButton';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import Resume from './components/Resume';
+import BackToTop from './components/BackToTopButton';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
             <Resume />
             <Contact />
             <Footer />
+            <BackToTop />
         </div>
     );
 }

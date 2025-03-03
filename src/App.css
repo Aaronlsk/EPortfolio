@@ -60,8 +60,8 @@ section {
   padding: 8rem 2rem;
   max-width: 1200px;
   margin: 4rem auto;
-  opacity: 1; /* Ensure opacity is set to 1 */
-  transform: translateY(0); /* Ensure transform is set to default */
+  opacity: 1; 
+  transform: translateY(0); 
   transition: opacity 0.6s ease, transform 0.6s ease;
   border: 2px solid transparent;
   border-image: linear-gradient(135deg, var(--primary), var(--secondary)) 1;
@@ -101,6 +101,49 @@ body.dark-mode .section-title {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; 
+}
+
+.back-to-top button {
+  background-color: var(--primary); 
+  border: none;
+  border-radius: 50%;
+  width: 40px; 
+  height: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top button:hover {
+  background-color: var(--secondary); 
+  transform: scale(1.1);
+}
+
+.back-to-top button .arrow-icon {
+  width: 16px; 
+  height: 20px; 
+  color: white; 
+  stroke-width: 1.5; 
+}
+
+/* Dark Mode Support */
+body.dark-mode .back-to-top button {
+  background-color: var(--primary);
+}
+
+body.dark-mode .back-to-top button:hover {
+  background-color: var(--secondary);
 }
 
 /* Responsive Design */

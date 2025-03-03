@@ -92,6 +92,10 @@ const Skills = () => {
           </div>
         ))}
       </Slider>
+      {/* Credit Line */}
+      <div className="icon-credit">
+        Icons sourced from <a href="https://www.svgrepo.com/" target="_blank" rel="noopener noreferrer">SVG Repo</a>.
+      </div>
     </section>
   );
 };

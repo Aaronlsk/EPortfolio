@@ -22,10 +22,10 @@ const ParticlesComponent = (props) => {
     () => ({
       particles: {
         number: {
-            value: 175,
+            value: 100,
             density: {
                 enable: true,
-                value_area: 800
+                value_area: 300
             }
         },
         color: {
@@ -35,7 +35,7 @@ const ParticlesComponent = (props) => {
           type: "circle",
         },
         opacity: {
-          value: 0.5, // More translucent particles
+          value: 0.5, 
           random: false,
         },
         size: {
@@ -44,14 +44,14 @@ const ParticlesComponent = (props) => {
         },
         links: {
           enable: true,
-          distance: 150, // Closer particles, more links
+          distance: 150, 
           color: "#ffffff",
-          opacity: 0.4, // More translucent lines
-          width: 1, // Keep lines thin for web effect
+          opacity: 0.4, 
+          width: 1, 
         },
         move: {
           enable: true,
-          speed: 1, // Slower movement for a floating effect
+          speed: 1, 
           direction: "none",
           random: false,
           straight: false,

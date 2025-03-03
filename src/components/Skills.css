@@ -4,15 +4,6 @@
   overflow: hidden;
 }
 
-@keyframes underline-grow {
-  0% {
-      width: 0;
-  }
-  100% {
-      width: 60%;
-  }
-}
-
 .category-carousel {
   max-width: 1200px;
   margin: 0 auto;
@@ -20,10 +11,9 @@
 }
 
 .skill-category {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 2.5rem;
   border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: all 0.5s ease;
   position: relative;
@@ -94,7 +84,7 @@ body.dark-mode .skill-category {
 .skill-item {
   padding: 1.5rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.808);
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.5s ease;
@@ -200,6 +190,36 @@ body.dark-mode .slick-next {
   color: white;
 }
 
+/* Icon Credit Line */
+.icon-credit {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.icon-credit a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon-credit a:hover {
+  color: var(--secondary);
+}
+
+body.dark-mode .icon-credit {
+  color: #ccc;
+}
+
+body.dark-mode .icon-credit a {
+  color: var(--primary);
+}
+
+body.dark-mode .icon-credit a:hover {
+  color: var(--secondary);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .skills-grid {
@@ -219,7 +239,7 @@ body.dark-mode .slick-next {
   }
 
   .skill-icon {
-      width: 35px; /* Slightly smaller for mobile */
+      width: 35px;
       height: 35px;
   }
 
